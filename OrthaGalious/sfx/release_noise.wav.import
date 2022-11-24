@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/release_noise.wav-f3482bba402dc3cdd966aa7952155802.sample"
+
+[deps]
+
+source_file="res://sfx/release_noise.wav"
+dest_files=[ "res://.import/release_noise.wav-f3482bba402dc3cdd966aa7952155802.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

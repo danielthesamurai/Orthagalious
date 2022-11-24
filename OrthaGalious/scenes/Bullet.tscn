@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://sprites/fire_ball.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Bullet.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 33.1853, 31.4386 )
+
+[node name="Bullet" type="Sprite" groups=["bullet"]]
+position = Vector2( 400, 250 )
+scale = Vector2( 0.210937, 0.445313 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="." groups=["bullet"]]
+position = Vector2( 0, 0.000183105 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" groups=["bullet"]]
+shape = SubResource( 1 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="." groups=["bullet"]]
+position = Vector2( 4.48227e-05, 3.93391e-06 )
+scale = Vector2( 3.31853, 3.14385 )
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

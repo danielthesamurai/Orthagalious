@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ufo_death.wav-a879c3fe122b65b7debe172a32f7dd42.sample"
+
+[deps]
+
+source_file="res://sfx/ufo_death.wav"
+dest_files=[ "res://.import/ufo_death.wav-a879c3fe122b65b7debe172a32f7dd42.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
